@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.full-page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.navbar {
+  width: 8vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  /* border: 2px solid red; */
+  cursor: pointer;
+}
+.com {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+.com .navbar-icons {
+  width: 40px;
+  padding: 5px;
+  color: grey;
+}
+.check_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.check:checked ~ .full-page .main-page {
+  border: 2px solid red;
+}
+#lesson_plan:checked ~ .lesson {
+  background-color: rgba(0, 204, 255, 0.2);
+  border-left: 5px solid rgba(0, 204, 255, 0.7);
+}
+.students-name {
+  font-size: 1.4rem;
+  color: grey;
+}
+.company-icon {
+  width: 100%;
+  transform: scale(2);
+}
+.lesson:hover {
+  background-color: rgba(0, 204, 255, 0.2);
+  border-left: 5px solid rgba(0, 204, 255, 0.7);
+}
+.main-page {
+  padding: 40px;
+  width: 92%;
+  /* display: none; */
+  position: relative;
+  top: 10vh;
+  /* border: 2px solid red; */
+  background-color: rgba(236, 234, 234, 0.5);
+}
+.videos_name {
+  margin-top: 5vh;
+  color: grey;
+}
+.videos_name::before {
+  content: "<";
+  margin-right: 10px;
+  width: 4px;
+}
+.insert_url {
+  left: 0;
+  right: 0;
+  text-align: left;
+  font-weight: 800;
+  color: black;
+  width: 60vw;
+  position: relative;
+  height: 5vh;
+  left: 10vw;
+  margin-top: 5vh;
+  border: none;
+}
+.or {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+  font-size: 1.4rem;
+}
+.upload {
+  height: 200px;
+  width: 200px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: relative;
+  left: 10vw;
+}
